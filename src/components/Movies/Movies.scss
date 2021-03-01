@@ -1,0 +1,78 @@
+@import '~styles/_variables';
+
+.movies {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0 60px;
+  color: $color-white;
+  background-color: $color-grey-dark;
+
+  &-options {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $color-grey;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 10px;
+    list-style-type: none;
+  }
+
+  &-filters {
+    display: flex;
+
+    input {
+      display: none;
+
+      &:checked + label {
+        border-bottom: 4px solid $color-pink;
+      }
+    }
+
+    &-item {
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      > label {
+        display: block;
+        margin-bottom: -4px;
+        padding: 5px 0;
+        font-size: 1.15rem;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-sort-by {
+    > label {
+      margin-right: 1.5rem;
+      color: $color-grey-light;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+    }
+
+    > select {
+      padding: 0 0.5em;
+      color: inherit;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      border: 0;
+      background: inherit;
+      outline: none;
+    }
+
+    > option {
+      background: $color-grey;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import '~styles/_variables';
+
+.footer {
+  padding: 25px;
+  margin-top: 5px;
+  text-align: center;
+  background: $color-grey-dark;
+}
+.footer-logo {
+  color: $color-pink;
+  font-size: 1.25rem;
+  strong {
+    font-weight: 900;
+    font-size: inherit;
+  }
+}

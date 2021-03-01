@@ -1,0 +1,83 @@
+@import '~styles/_variables';
+
+.header {
+  padding: 15px 55px;
+  background-color: $color-grey-dark;
+}
+.header-logo {
+  width: max-content;
+  color: $color-pink;
+  font-size: 1.25rem;
+  text-decoration: none;
+  strong {
+    font-size: inherit;
+    font-family: $font-primary-bold;
+    letter-spacing: normal;
+  }
+}
+input {
+  width: 100%;
+  padding: 0.65em 1em;
+  color: $color-white;
+  font: 1.45rem $font-primary-light;
+  border: 0;
+  border-radius: 4px;
+  background: $color-grey-light;
+  outline: none;
+  &:read-only {
+    padding: 0;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: initial;
+  }
+  &:not(:read-only):focus {
+    box-shadow: 0 0 1px 1px $color-pink;
+  }
+}
+.find-movie {
+  padding: 55px 60px 130px;
+  &-title {
+    margin-bottom: 35px;
+    color: $color-white;
+    font-weight: 100;
+    font-size: 3rem;
+    font-family: 'Roboto Light', sans-serif;
+    text-transform: uppercase;
+  }
+  &-form {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    > input {
+      margin-right: 1rem;
+    }
+    button {
+      min-width: auto;
+      padding: 0 3.5em;
+    }
+  }
+}
+.btn {
+  min-width: 180px;
+  padding: 0.65em 0.5em;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  border: 2px solid $color-pink;
+  border-radius: 4px;
+  background: none;
+  cursor: pointer;
+  &-primary {
+    color: $color-white;
+    background-color: $color-pink;
+    &:hover {
+      background-color: lighten($color-pink, 5%);
+    }
+  }
+  &-secondary {
+    color: $color-pink;
+    &:hover {
+      border-color: lighten($color-pink, 5%);
+    }
+  }
+}
+

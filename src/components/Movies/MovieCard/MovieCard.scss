@@ -1,0 +1,47 @@
+@import '~styles/_variables';
+
+.movie {
+  position: relative;
+  width: 320px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &-poster {
+    display: block;
+    width: 100%;
+    height: 450px;
+    margin-bottom: 1rem;
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+    object-fit: cover;
+  }
+
+  &-info {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    color: $color-grey-light;
+
+    .title {
+      font-size: 1.25rem;
+      margin-right: 0.5em;
+    }
+
+    .date {
+      padding: 0.25em 0.75em;
+      border: 1px solid $color-grey;
+      border-radius: 4px;
+    }
+
+  }
+
+
+  &-genres {
+    color: $color-grey;
+    font-size: 1rem;
+    text-transform: capitalize;
+  }
+}
