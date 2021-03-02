@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import './ErrorBoundary.scss';
+import "./ErrorBoundary.scss";
 
 class ErrorBoundary extends React.Component {
   state = { error: null, errorInfo: null };

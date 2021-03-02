@@ -1,13 +1,12 @@
-import React from 'react';
-
-import './Footer.scss';
+import React from "react";
+import "./Footer.scss";
 
 const Footer = () => (
-    <footer className="footer">
+  <footer className="footer">
     <span className="footer-logo">
       <strong>netflix</strong>roulette
     </span>
-    </footer>
+  </footer>
 );
 
-export {Footer};
+export { Footer };

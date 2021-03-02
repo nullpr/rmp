@@ -1,4 +1,4 @@
-@import '~styles/_variables';
+@import "~styles/_variables";
 
 .movie {
   position: relative;
@@ -35,9 +35,7 @@
       border: 1px solid $color-grey;
       border-radius: 4px;
     }
-
   }
-
 
   &-genres {
     color: $color-grey;

@@ -1,15 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Header } from './Header';
-import { Footer } from './Footer';
-import { Main } from './Main';
+import React from "react";
+import PropTypes from "prop-types";
+import { Header } from "./Header";
+import { Footer } from "./Footer";
+import { Main } from "./Main";
 
 const Layout = ({ children }) => (
   <div className="container">
     <Header />
-    <Main>
-      {children}
-    </Main>
+    <Main>{children}</Main>
     <Footer />
   </div>
 );
